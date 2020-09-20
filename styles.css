@@ -1,0 +1,36 @@
+* {
+    background-color: rgb(11, 12, 75);
+}
+
+h1 {
+    font-family: 'Notable', sans-serif;
+    color: white;
+    text-align: center;
+    font-size:100px;
+    margin: 0px;
+    word-spacing: 10px;
+}
+
+#grid {
+    display: grid;
+    width: 700px;
+    margin: 10px 0px 0px 350px;
+    grid-template-rows: repeat(100, 7px);
+    grid-template-columns: repeat(100, 7px);
+    border: 10px solid white;
+    color: white;
+}
+
+#grid > div {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid > div > div {
+    width: 7px;
+    height: 7px;
+}
+
